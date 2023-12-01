@@ -3,4 +3,4 @@ Basically a browser startup index.html file, the hyperlinks are for folders i us
 To get your own Google cx key just go to https://programmablesearchengine.google.com/about/ and Get started, and it will generate one for you. And change it in the index.html file where i added a comment. You also need to change the path
 for the background ofcourse.
 
-![alt tag]([http://url/to/img.png](https://github.com/a6thmfsin/Firefox-Startup-HTML/blob/main/something.png)https://github.com/a6thmfsin/Firefox-Startup-HTML/blob/main/something.png)
+![img]([http://url/to/img.png](https://github.com/a6thmfsin/Firefox-Startup-HTML/blob/main/something.png)https://github.com/a6thmfsin/Firefox-Startup-HTML/blob/main/something.png)
