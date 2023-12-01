@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en-US">
+<head>
+    <title>Custom Firefox Startup Window</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script async src="https://cse.google.com/cse.js?cx=x"></script>-->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .bg-container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('/home/greyhound/Pictures/firefox0.jpg');
+            background-size: cover;
+            background-position: top;
+            opacity: 60%;
+            box-shadow: 0 0 150px 20px blue inset;
+            z-index: 0;
+        }
+
+        .gcse-search {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .stuff-container {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .stuff-container a {
+            text-decoration: none;
+            color: blue;
+            padding: 15px 15px;
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+        }
+
+        .stuff-container a:not(:last-child)::after {
+            content: "$";
+            position: absolute;
+            right: -5px;
+            color: blue;
+        }
+
+        input[type="text"],
+        input[type="submit"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid blue;
+            font-size: 30px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #1f1f1f;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-color: #000000;">
+
+    <div class="bg-container"></div>
+
+        <div class="gcse-search">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="?query="/>
+                <input type="hidden" name="cx" value="xxxx"/> <!--Get your key from Google read readme file-->
+                <input type="submit" value="[Fetch Google Resource$]"/>
+            </form>
+        </div>
+    </div>
+
+   <div class="stuff-container"> 
+        <a href="/home/greyhound/" target="_self" style="text-decoration: none; color: blue;">dir</a>
+        <a href="/home/greyhound/Desktop/docs/" target="_self" style="text-decoration: none; color: blue;">docs</a>
+        <a href="/home/greyhound/Desktop/wordlists/" target="_self" style="text-decoration: none; color: blue;">wordlists</a>
+        <a href="/home/greyhound/Desktop/bugbounty/" target="_self" style="text-decoration: none; color: blue;">bugbounty</a>
+        <a href="/home/greyhound/Desktop/CTF/" target="_self" style="text-decoration: none; color: blue;">CTF</a>
+        <a href="/home/greyhound/Desktop/tools/" target="_self" style="text-decoration: none; color: blue;">tools</a>
+        <a href="/home/greyhound/Desktop/scripts/" target="_self" style="text-decoration: none; color: blue;">scripts</a>
+        <a href="/home/greyhound/Desktop/exploits/" target="_self" style="text-decoration: none; color: blue;">exploits</a>
+        <a href="/home/greyhound/Desktop/payloads/" target="_self" style="text-decoration: none; color: blue;">payloads</a>
+        <a href="/home/greyhound/Desktop/debugging/" target="_self" style="text-decoration: none; color: blue;">debugging</a>
+        <a href="/" target="_self" style="text-decoration: none; color: blue;">root</a>
+   </div>
+
+</body>
+</html>
