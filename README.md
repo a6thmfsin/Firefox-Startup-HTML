@@ -7,5 +7,4 @@ for the background ofcourse.
 ![something.png](https://raw.githubusercontent.com/a6thmfsin/Firefox-Startup-HTML/main/wobr.png)
 
 (without Dark Reader)
-
 ![something.png](https://raw.githubusercontent.com/a6thmfsin/Firefox-Startup-HTML/main/something.png)
